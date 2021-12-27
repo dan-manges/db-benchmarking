@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 exec > >(tee -i latest_run.log)
 
@@ -12,4 +13,8 @@ echo '-----------------------------------------------'
 
 echo 'go'
 bash -c 'cd go && ./run.sh'
+echo '-----------------------------------------------'
+
+echo 'rust'
+bash -c 'cd rust && docker-compose run app'
 echo '-----------------------------------------------'

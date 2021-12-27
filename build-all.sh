@@ -10,3 +10,7 @@ echo '-----------------------------------------------'
 echo 'go'
 bash -c 'cd go && docker-compose build app'
 echo '-----------------------------------------------'
+
+echo 'rust'
+bash -c 'cd rust && docker-compose build app'
+echo '-----------------------------------------------'

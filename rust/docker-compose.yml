@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:14.1
+    environment:
+      POSTGRES_PASSWORD: password
+  app:
+    build: .
+    command: bash -c 'cd /code/benchmarking && cargo run'
+    volumes:
+      - .:/code
+    depends_on:
+      - db

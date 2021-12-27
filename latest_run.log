@@ -1,30 +1,32 @@
 ruby
-sqlite insert runtime (1000 iterations): 5.184ms
-sqlite select runtime (1000 iterations): 28.609ms
+sqlite insert runtime (1000 iterations): 5.154ms
+sqlite select runtime (1000 iterations): 29.254ms
 
 NOTICE:  table "numbers" does not exist, skipping
-postgres insert runtime (1000 iterations): 112.447ms
-postgres select runtime (1000 iterations): 123.899ms
+postgres insert runtime (1000 iterations): 96.086ms
+postgres select runtime (1000 iterations): 134.761ms
 -----------------------------------------------
 elixir
-sqlite insert runtime (1000 iterations): 5.994ms
-sqlite insert2 runtime (1000 iterations): 13.455ms
-sqlite select runtime (1000 iterations): 33.533ms
+sqlite insert runtime (1000 iterations): 6.341ms
+sqlite insert2 runtime (1000 iterations): 14.424ms
+sqlite select runtime (1000 iterations): 34.091ms
 
-postgres insert runtime (1000 iterations): 292.268ms
-postgres select runtime (1000 iterations): 320.658ms
+postgres insert runtime (1000 iterations): 264.133ms
+postgres select runtime (1000 iterations): 296.925ms
 end postgres
 -----------------------------------------------
 go
-2021/12/27 20:48:24 sqlite inserts took 2.301125ms
-2021/12/27 20:48:24 sqlite selects took 13.275542ms
+2021/12/27 21:38:38 sqlite inserts took 2.161542ms
+2021/12/27 21:38:38 sqlite selects took 13.40575ms
 
-2021/12/27 20:48:24 postgres inserts took 125.769459ms
-2021/12/27 20:48:24 postgres selects took 142.66925ms
+2021/12/27 21:38:38 postgres inserts took 122.14375ms
+2021/12/27 21:38:39 postgres selects took 132.451459ms
 -----------------------------------------------
 rust
-sqlite insert runtime 2.914ms
+[0m[0m[1m[32m    Finished[0m dev [unoptimized + debuginfo] target(s) in 1.23s
+[0m[0m[1m[32m     Running[0m `target/debug/benchmarking`
+sqlite insert runtime 2.897ms
 
-postgres insert runtime 266.636ms
+postgres insert runtime 271.198ms
 Done running rust
 -----------------------------------------------

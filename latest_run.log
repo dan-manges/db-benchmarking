@@ -1,0 +1,16 @@
+ruby
+sqlite insert runtime (1000 iterations): 4.827ms
+sqlite select runtime (1000 iterations): 30.278ms
+
+postgres insert runtime (1000 iterations): 191.619ms
+postgres select runtime (1000 iterations): 124.247ms
+-----------------------------------------------
+elixir
+sqlite insert runtime (1000 iterations): 90.693ms
+sqlite insert2 runtime (1000 iterations): 55.248ms
+sqlite select runtime (1000 iterations): 160.896ms
+
+postgres insert runtime (1000 iterations): 300.226ms
+postgres select runtime (1000 iterations): 304.132ms
+end postgres
+-----------------------------------------------

@@ -1,2 +1,2 @@
 #!/bin/sh
-mix run -e 'Benchmarking.hello()'
+mix run -e 'Benchmarking.run_all()'

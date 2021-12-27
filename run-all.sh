@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+exec > >(tee -i latest_run.log)
 
 echo 'ruby'
 bash -c 'cd ruby && ./run.sh'

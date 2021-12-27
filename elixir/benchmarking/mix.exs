@@ -21,8 +21,8 @@ defmodule Benchmarking.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:exqlite, "~> 0.8.4"}
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
+      {:exqlite, "~> 0.8.4"},
+      {:postgrex, "~> 0.15.13"},
     ]
   end
 end

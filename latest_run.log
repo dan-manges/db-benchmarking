@@ -1,22 +1,24 @@
 ruby
-sqlite insert runtime (1000 iterations): 5.515ms
-sqlite select runtime (1000 iterations): 35.55ms
+sqlite insert runtime (1000 iterations): 6.305ms
+sqlite select runtime (1000 iterations): 35.867ms
 
 NOTICE:  table "numbers" does not exist, skipping
-postgres insert runtime (1000 iterations): 285.258ms
-postgres select runtime (1000 iterations): 136.955ms
+postgres insert runtime (1000 iterations): 422.161ms
+postgres select runtime (1000 iterations): 171.125ms
 -----------------------------------------------
 elixir
-sqlite insert runtime (1000 iterations): 6.004ms
-sqlite insert2 runtime (1000 iterations): 16.645ms
-sqlite select runtime (1000 iterations): 33.656ms
+sqlite insert runtime (1000 iterations): 5.18ms
+sqlite insert2 runtime (1000 iterations): 12.615ms
+sqlite select runtime (1000 iterations): 31.996ms
 
-postgres insert runtime (1000 iterations): 325.61ms
-postgres select runtime (1000 iterations): 311.789ms
+postgres insert runtime (1000 iterations): 301.972ms
+postgres select runtime (1000 iterations): 317.978ms
 end postgres
 -----------------------------------------------
 go
-2021/12/27 18:09:35 sqlite inserts took 2.184958ms
-2021/12/27 18:09:35 sqlite selects took 13.190416ms
-Hello, World!
+2021/12/27 18:30:02 sqlite inserts took 2.448334ms
+2021/12/27 18:30:02 sqlite selects took 13.402042ms
+
+2021/12/27 18:30:02 postgres inserts took 341.619584ms
+2021/12/27 18:30:03 postgres selects took 143.029375ms
 -----------------------------------------------

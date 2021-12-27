@@ -1,16 +1,17 @@
 ruby
-sqlite insert runtime (1000 iterations): 4.827ms
-sqlite select runtime (1000 iterations): 30.278ms
+sqlite insert runtime (1000 iterations): 6.4ms
+sqlite select runtime (1000 iterations): 36.454ms
 
-postgres insert runtime (1000 iterations): 191.619ms
-postgres select runtime (1000 iterations): 124.247ms
+NOTICE:  table "numbers" does not exist, skipping
+postgres insert runtime (1000 iterations): 409.963ms
+postgres select runtime (1000 iterations): 135.433ms
 -----------------------------------------------
 elixir
-sqlite insert runtime (1000 iterations): 90.693ms
-sqlite insert2 runtime (1000 iterations): 55.248ms
-sqlite select runtime (1000 iterations): 160.896ms
+sqlite insert runtime (1000 iterations): 4.78ms
+sqlite insert2 runtime (1000 iterations): 14.484ms
+sqlite select runtime (1000 iterations): 31.171ms
 
-postgres insert runtime (1000 iterations): 300.226ms
-postgres select runtime (1000 iterations): 304.132ms
+postgres insert runtime (1000 iterations): 346.683ms
+postgres select runtime (1000 iterations): 307.325ms
 end postgres
 -----------------------------------------------
